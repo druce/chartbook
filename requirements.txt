@@ -1,0 +1,10 @@
+numpy
+pandas
+pandas-datareader
+plotly
+python-dotenv
+pyyaml
+nbformat
+tqdm
+quandl
+yfinance
