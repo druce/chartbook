@@ -6,39 +6,30 @@ FRED:
   AISRSA:
     freq: M
     title: Auto Inventory/Sales Ratio
-    transform: NONE
   ALTSALES:
     freq: M
     title: 'Light Weight Vehicle Sales: Autos and Light Trucks'
-    transform: NONE
   AMTMNO:
     freq: M
     title: 'Manufacturers'' New Orders: Total Manufacturing'
-    transform: NONE
   AWHMAN:
     freq: M
     title: Manufacturing workweek
-    transform: NONE
   BAA10Y:
     freq: D
     title: Moody's Seasoned Baa Corporate vs 10-Year Treasury CM
-    transform: NONE
   BAMLC0A4CBBB:
     freq: D
     title: ICE BofA BBB US Corporate Index Option-Adjusted Spread
-    transform: NONE
   BAMLH0A0HYM2:
     freq: D
     title: ICE BofA US High Yield Index Option-Adjusted Spread
-    transform: NONE
   BOPGSTB:
     freq: M
     title: 'Trade Balance: Goods and Services, Balance of Payments Basis'
-    transform: NONE
   BOPGTB:
     freq: M
     title: 'Trade Balance: Goods, Balance of Payments Basis'
-    transform: NONE
   BUSLOANS:
     freq: W
     title: Commercial and Industrial Loans, All Commercial Banks
@@ -46,7 +37,6 @@ FRED:
   CC4WSA:
     freq: W
     title: 4-Week Moving Average of Continued Claims (Insured Unemployment
-    transform: NONE
   CCLACBW027SBOG:
     freq: M
     title: 'Consumer Loans: Credit Cards and Other Revolving Plans, All Commercial
@@ -55,15 +45,12 @@ FRED:
   CDSP:
     freq: Q
     title: Consumer Debt Service Payments as a Percent of Disposable Personal Income
-    transform: NONE
   CIVPART:
     freq: M
     title: Labor Force Participation Rate
-    transform: NONE
   CORESTICKM159SFRBATL:
     freq: M
     title: Sticky Price Consumer Price Index less Food and Energy
-    transform: NONE
   CPIAUCSL:
     freq: M
     title: CPI, All Urban
@@ -79,41 +66,32 @@ FRED:
   DFF:
     freq: D
     title: Federal Funds Effective Rate
-    transform: NONE
   DGORDER:
     freq: M
     title: 'Manufacturers'' New Orders: Durable Goods'
-    transform: NONE
   DGS1:
     freq: D
     title: 1-Year CM Treasury
-    transform: NONE
   DGS10:
     freq: D
     title: 10-Year CM Treasury
-    transform: NONE
   DGS2:
     freq: D
     title: 2-Year CM Treasury
-    transform: NONE
   DGS30:
     freq: D
     title: 30-Year CM Treasury
-    transform: NONE
   DGS5:
     freq: D
     title: 5-Year CM Treasury
-    transform: NONE
   DIVIDEND:
     freq: Q
   DRCCLACBS:
     freq: M
     title: Delinquency Rate on Credit Card, Total for United States
-    transform: NONE
   DRSFRMACBS:
     freq: M
     title: Delinquency Rate on Single-Family Residential Mortgages
-    transform: NONE
   DSPIC96:
     freq: M
     title: Real Disposable Personal Income
@@ -121,15 +99,12 @@ FRED:
   DTB3:
     freq: D
     title: 3-Month Treasury Bill
-    transform: NONE
   DTWEXAFEGS:
     freq: D
     title: Nominal Advanced Foreign Economies Dollar Index
-    transform: NONE
   DTWEXBGS:
     freq: D
     title: Nominal Broad Dollar Index
-    transform: NONE
   ECIALLCIV:
     freq: Q
     title: Employment cost index, all civilian
@@ -137,19 +112,15 @@ FRED:
   EMRATIO:
     freq: M
     title: Employment-Population Ratio
-    transform: NONE
   EXHOSLUSM495S:
     freq: M
     title: Existing Home Sales
-    transform: NONE
   FEDFUNDS:
     freq: M
     title: Effective Fed Fund Rate
-    transform: NONE
   FEDTARMD:
     freq: M
     title: Fed Funds Median Projection (dot plot)
-    transform: NONE
   FGCEC1:
     freq: Q
     title: Real Federal Consumption Expenditures and Gross Investment
@@ -157,7 +128,6 @@ FRED:
   FODSP:
     freq: Q
     title: Household Financial Obligations as a Percent of Disposable Personal Income
-    transform: NONE
   GCEC1:
     freq: Q
     title: Real Government Consumption Expenditures and Gross Investment
@@ -177,37 +147,29 @@ FRED:
   GFDEGDQ188S:
     freq: Q
     title: 'Federal Debt: Total Public Debt as Percent of Gross Domestic Product'
-    transform: NONE
   GVZCLS:
     freq: D
   HDTGPDUSQ163N:
     freq: M
     title: Household Debt to GDP for United States
-    transform: NONE
   HOSSUPUSM673N:
     freq: M
     title: 'Existing Home Sales: Months Supply'
-    transform: NONE
   HOUST:
     freq: M
     title: New Privately-Owned Housing Units Started
-    transform: NONE
   HSFMEDUSM052N:
     freq: M
     title: Median Sales Price of Existing Single-Family Homes
-    transform: NONE
   HSN1F:
     freq: M
     title: New One Family Houses Sold
-    transform: NONE
   IC4WSA:
     freq: W
     title: Initial Claims, 4-week MA
-    transform: NONE
   IEABC:
     freq: M
     title: Balance on current account
-    transform: NONE
   INDPRO:
     freq: M
     title: Industrial Production
@@ -215,23 +177,18 @@ FRED:
   IQ:
     freq: Q
     title: 'Export Price Index (End Use): All Commodities'
-    transform: NONE
   IR:
     freq: Q
     title: 'Import Price Index (End Use): All Commodities'
-    transform: NONE
   JTSJOL:
     freq: M
     title: 'Job Openings: Total Nonfarm'
-    transform: NONE
   JTSQUR:
     freq: M
     title: 'Quits: Total Nonfarm'
-    transform: NONE
   KCFSI:
     freq: W
     title: Kansas City Financial Stress Index
-    transform: NONE
   M1SL:
     freq: M
   M1V:
@@ -241,35 +198,27 @@ FRED:
   MANEMP:
     freq: M
     title: All Employees, Manufacturing
-    transform: NONE
   MEHOINUSA672N:
     freq: M
     title: Real Median Household Income in the United States
-    transform: NONE
   MNFCTRIRSA:
     freq: M
     title: 'Manufacturers: Inventories to Sales Ratio'
-    transform: NONE
   MORTGAGE30US:
     freq: W
     title: 30-Year Fixed Rate Mortgage Average
-    transform: NONE
   MSACSR:
     freq: M
     title: Monthly Supply of New Houses in the United States
-    transform: NONE
   MTSDS133FMS:
     freq: Q
     title: Federal Surplus or Deficit
-    transform: NONE
   NEWORDER:
     freq: M
     title: 'Manufacturers'' New Orders: Nondefense Capital Goods Excluding Aircraft'
-    transform: NONE
   NFCI:
     freq: W
     title: Financial Conditions Index
-    transform: NONE
   OPHNFB:
     freq: Q
     title: Output per hour, nonfarm business
@@ -277,7 +226,6 @@ FRED:
   PAYEMS:
     freq: M
     title: All Employees, Total Nonfarm
-    transform: NONE
   PCEC96:
     freq: M
     title: Real Personal Consumption Expenditures
@@ -289,11 +237,9 @@ FRED:
   PENLISCOUUS:
     freq: M
     title: 'Housing Inventory: Pending Listing Count in the United States'
-    transform: NONE
   PERMIT:
     freq: M
     title: New Privately-Owned Housing Units Authorized in Permit-Issuing Places
-    transform: NONE
   PPICOR:
     freq: M
     title: PPI, Final ex Food & Energy
@@ -301,19 +247,15 @@ FRED:
   PSAVERT:
     freq: M
     title: Personal Saving Rate
-    transform: NONE
   RECPROUSM156N:
     freq: Q
     title: Smoothed U.S. Recession Probabilities
-    transform: NONE
   RETAILIRSA:
     freq: M
     title: 'Retailers: Inventories to Sales Ratio'
-    transform: NONE
   RRVRUSQ156N:
     freq: Q
     title: Rental Vacancy Rate in the United States
-    transform: NONE
   RSAFS:
     freq: M
     title: 'Advance Retail Sales: Retail Trade and Food Services'
@@ -325,7 +267,6 @@ FRED:
   RTWEXBGS:
     freq: D
     title: Real Broad Dollar Index
-    transform: NONE
   SLCEC1:
     freq: Q
     title: Real State and Local Consumption Expenditures & Gross Investment
@@ -333,35 +274,27 @@ FRED:
   SOFR30DAYAVG:
     freq: D
     title: 30-Day Average SOFR
-    transform: NONE
   SPCS20RSA:
     freq: M
     title: S&P/Case-Shiller 20-City Composite Home Price Index
-    transform: NONE
   STLFSI4:
     freq: W
     title: St. Louis Fed Financial Stress Index
-    transform: NONE
   T10Y2Y:
     freq: D
     title: 10-Year Treasury CM Minus 2-Year Treasury CM
-    transform: NONE
   T10YIE:
     freq: D
     title: 10-Year Breakeven Inflation Rate
-    transform: NONE
   T5YIE:
     freq: D
     title: 5-Year Breakeven Inflation Rate
-    transform: NONE
   T5YIFR:
     freq: D
     title: 5-Year, 5-Year Forward Inflation Expectation Rate
-    transform: NONE
   TCU:
     freq: M
     title: Capacity Utilization
-    transform: NONE
   ULCNFB:
     freq: Q
     title: Unit labor cost, nonfarm business
@@ -369,11 +302,9 @@ FRED:
   UNRATE:
     freq: M
     title: Unemployment Rate
-    transform: NONE
   USSTHPI:
     freq: M
     title: All-Transactions House Price Index for the United States
-    transform: NONE
   VIXCLS:
     freq: D
   W006RC1Q027SBEA:
@@ -394,6 +325,27 @@ FRED:
     freq: M
     title: PPI, Intermediate ex Food & Energy
     transform: YOY
+  USALOLITONOSTSAM:
+    freq: M
+    title: Composite Leading Indicators USA (OECD Normalised)
+  CSCICP03USM665S:
+    freq: M
+    title: Composite Confidence Indicator USA (OECD)
+  UMCSENT:
+    freq: M
+    title: U. of Michigan Consumer Sentiment
+  GACDFSA066MSFRBPHI:
+    freq: M
+    title: Philly Fed General Activity Diffusion Index
+  GACDISA066MSFRBNY:
+    freq: M
+    title: NY Fed General Business Conditions Diffusion Index
+  BACTSAMFRBDAL:
+    freq: M
+    title: Dallas Fed Current General Business Activity Diffusion Index
+  CFNAIDIFF:
+    freq: M
+    title: Chicago Fed National Activity Diffusion Index
 QUANDL:
   BCHAIN/MKPRU:
     freq: D
