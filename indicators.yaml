@@ -144,6 +144,12 @@ FRED:
     freq: Q
     title: Real Potential GDP
     transform: YOY
+  GDPNOW:
+    freq: Q
+    title: Atlanta Fed GDP Nowcast
+  STLENI:
+    freq: Q
+    title: St. Louis Fed Economic News Index: Real GDP Nowcast
   GFDEGDQ188S:
     freq: Q
     title: 'Federal Debt: Total Public Debt as Percent of Gross Domestic Product'
@@ -231,7 +237,7 @@ FRED:
     title: Real Personal Consumption Expenditures
     transform: YOY
   PCEPILFE:
-    freq: Q
+    freq: M
     title: Core PCE deflator
     transform: YOY
   PENLISCOUUS:
@@ -346,6 +352,9 @@ FRED:
   CFNAIDIFF:
     freq: M
     title: Chicago Fed National Activity Diffusion Index
+  T5YIFR:
+    freq: D
+    title: 5-Year, 5-Year Forward Inflation Expectation Rate
 QUANDL:
   BCHAIN/MKPRU:
     freq: D
