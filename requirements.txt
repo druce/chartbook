@@ -8,3 +8,5 @@ nbformat
 tqdm
 quandl
 yfinance
+kaleido
+
