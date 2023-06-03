@@ -149,7 +149,7 @@ FRED:
     title: Atlanta Fed GDP Nowcast
   STLENI:
     freq: Q
-    title: St. Louis Fed Economic News Index: Real GDP Nowcast
+    title: 'St. Louis Fed Economic News Index Real GDP Nowcast'
   GFDEGDQ188S:
     freq: Q
     title: 'Federal Debt: Total Public Debt as Percent of Gross Domestic Product'
@@ -358,10 +358,25 @@ FRED:
 QUANDL:
   BCHAIN/MKPRU:
     freq: D
+    title: Bitcoin Market Price 
   LBMA/GOLD:
     freq: D
+    title: Gold Price
+  MULTPL/SP500_DIV_YIELD_MONTH:
+    freq: M
+    title: S&P 500 Dividend Yield by Month
+  MULTPL/SP500_PE_RATIO_MONTH:
+    freq: M
+    title: S&P 500 PE Ratio by Month
   MULTPL/SHILLER_PE_RATIO_MONTH:
     freq: M
+    title: Shiller PE Ratio by Month
+  MULTPL/SP500_EARNINGS_YIELD_MONTH:
+    freq: M
+    title: S&P 500 Earnings Yield by Month
+  MULTPL/SP500_PBV_RATIO_QUARTER:
+    freq: Q
+    title: S&P 500 Price to Book Value by Quarter
   USTREASURY/REALYIELD:
     freq: D
   USTREASURY/YIELD:
