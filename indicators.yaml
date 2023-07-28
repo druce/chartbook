@@ -48,6 +48,9 @@ FRED:
   CIVPART:
     freq: M
     title: Labor Force Participation Rate
+  LNS11300060:
+    freq: M
+    title: Prime Age Labor Force Participation Rate 25-54
   CORESTICKM159SFRBATL:
     freq: M
     title: Sticky Price Consumer Price Index less Food and Energy
