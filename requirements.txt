@@ -9,4 +9,4 @@ tqdm
 quandl
 yfinance
 kaleido
-
+Pillow
