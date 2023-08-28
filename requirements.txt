@@ -8,5 +8,6 @@ nbformat
 tqdm
 quandl
 yfinance
+fredapi
 kaleido
 Pillow
