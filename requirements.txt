@@ -1,13 +1,16 @@
 numpy
 pandas
 pandas-datareader
+requests
+beautifulsoup4
+lxml
 plotly
 python-dotenv
 pyyaml
 nbformat
 tqdm
-quandl
 yfinance
 fredapi
 kaleido
 Pillow
+ipykernel

@@ -358,35 +358,71 @@ FRED:
   T5YIFR:
     freq: D
     title: 5-Year, 5-Year Forward Inflation Expectation Rate
-QUANDL:
-  BCHAIN/MKPRU:
+# Formerly QUANDL. The Nasdaq Data Link legacy /api/v3/datasets/ time-series
+# endpoints (all quandl.get() can speak) are now walled off behind an Imperva
+# WAF and return an HTML 403 regardless of API key, so these series are sourced
+# directly from the publishers instead. Keys keep their old names because
+# chartbook.ipynb references them literally.
+
+# home.treasury.gov daily rate CSVs; `curve` is the ?type= query parameter.
+TREASURY:
+  USTREASURY_YIELD:
     freq: D
-    title: Bitcoin Market Price 
-  LBMA/GOLD:
+    curve: daily_treasury_yield_curve
+    title: Treasury Par Yield Curve
+    # The yield curve chart plots these against X = [1/12, 2/12, 3/12, 6/12, 1,
+    # 2, 3, 5, 7, 10, 20, 30], so pin the 12 tenors in this order. Treasury has
+    # since added "1.5 Month" and "4 Mo" columns that would otherwise shift it.
+    tenors: ['1 Mo', '2 Mo', '3 Mo', '6 Mo', '1 Yr', '2 Yr',
+             '3 Yr', '5 Yr', '7 Yr', '10 Yr', '20 Yr', '30 Yr']
+  USTREASURY_REALYIELD:
     freq: D
-    title: Gold Price
-  MULTPL/SP500_DIV_YIELD_MONTH:
+    curve: daily_treasury_real_yield_curve
+    title: Treasury Real Par Yield Curve
+
+# multpl.com HTML tables; `slug` is the path segment in multpl.com/<slug>/table/by-month.
+MULTPL:
+  MULTPL_SP500_DIV_YIELD_MONTH:
     freq: M
+    slug: s-p-500-dividend-yield
     title: S&P 500 Dividend Yield by Month
-  MULTPL/SP500_PE_RATIO_MONTH:
+  MULTPL_SP500_PE_RATIO_MONTH:
     freq: M
+    slug: s-p-500-pe-ratio
     title: S&P 500 PE Ratio by Month
-  MULTPL/SHILLER_PE_RATIO_MONTH:
+  MULTPL_SHILLER_PE_RATIO_MONTH:
     freq: M
+    slug: shiller-pe
     title: Shiller PE Ratio by Month
-  MULTPL/SP500_EARNINGS_YIELD_MONTH:
+  MULTPL_SP500_EARNINGS_YIELD_MONTH:
     freq: M
+    slug: s-p-500-earnings-yield
     title: S&P 500 Earnings Yield by Month
-  MULTPL/SP500_PBV_RATIO_QUARTER:
+  MULTPL_SP500_PBV_RATIO_QUARTER:
     freq: Q
+    slug: s-p-500-price-to-book
     title: S&P 500 Price to Book Value by Quarter
-  USTREASURY/REALYIELD:
+
+# yfinance. `single: true` reduces OHLCV to a one-column close series named after
+# the indicator, which is what do_transform expects for a scalar time series.
+# ^SPX/^DJI move here from STOOQ: the installed pandas_datareader has no stooq module.
+YAHOO:
+  LBMA_GOLD:
     freq: D
-  USTREASURY/YIELD:
+    ticker: GC=F
+    single: true
+    title: Gold Price (COMEX front-month futures)
+  BCHAIN_MKPRU:
     freq: D
-STOOQ:
-    ^SPX:
-      freq: D
-    ^DJI:
-      freq: D
+    ticker: BTC-USD
+    single: true
+    title: Bitcoin Market Price
+  SPX:
+    freq: D
+    ticker: ^SPX
+    title: S&P 500
+  DJI:
+    freq: D
+    ticker: ^DJI
+    title: Dow Jones Industrial Average
 

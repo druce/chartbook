@@ -13,6 +13,17 @@ periods = {
     'W': 52,
 }
 
+# pandas 3.0 removed the ambiguous offset aliases: bare "M"/"Q" are now "ME"/"QE"
+# (MonthEnd/QuarterEnd). Period aliases kept the old spelling, so period[Q] and
+# to_timestamp(freq="Q") still want the bare letter from indicators.yaml - only
+# offset contexts like pct_change(freq=...) need translating.
+offset_aliases = {
+    'Q': 'QE',
+    'M': 'ME',
+    'W': 'W',
+    'D': 'D',
+}
+
 yaxis_titles = {
     'YOY': "YoY %Ch",
     'NONE': "Level",
@@ -83,7 +94,8 @@ def do_transform(**kwargs):
             df['prev_1y'] = df['prev_1y'].ffill(axis=0)
             df[col] = df[indicator] / df['prev_1y'] * 100 - 100
         else:
-            df[col] = df[indicator].pct_change(periods=periods[freq], freq=freq) * 100
+            df[col] = df[indicator].pct_change(periods=periods[freq],
+                                               freq=offset_aliases[freq]) * 100
     df = df.dropna()
 
     retdict = kwargs
@@ -106,7 +118,9 @@ def chart_generic(df=None,
 
     fig = go.Figure(
         data=[go.Scatter(y=df[col],
-                         x=df.index.to_list(),
+                         # pass the index itself, not .to_list(): kaleido cannot
+                         # serialize a list of pandas Timestamps
+                         x=df.index,
                          line_width=2,
                          # color_discrete_sequence=plotly.colors.qualitative.Dark24
                          ),
